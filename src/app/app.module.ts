@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes.component';
 import { HeroDetailComponent } from './hero-detail.component';
+import { DemoComponent } from './demo.component';
 import { HeroService } from './hero.service';
 import { RouterModule }   from '@angular/router';
 
@@ -11,7 +12,8 @@ import { RouterModule }   from '@angular/router';
   declarations: [
     AppComponent,
     HeroesComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    DemoComponent
   ],
   imports: [
     BrowserModule,
