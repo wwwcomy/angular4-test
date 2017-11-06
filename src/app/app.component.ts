@@ -4,12 +4,13 @@ import { Component } from '@angular/core';
   template:`
     <h1>{{title}}</h1>
     <nav>
-      <a routerLink="/heroes">Heroes</a>
-      <a routerLink="/demo">Demo</a>
-      <a routerLink="/dashboard">Dashboard</a>
+      <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+      <a routerLink="/demo" routerLinkActive="active">Demo</a>
+      <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
     </nav>
     <router-outlet></router-outlet>
-  `
+  `,
+  styleUrls: [ './app.component.css' ]
 })
 export class AppComponent {
   title = 'This is my first angular App';

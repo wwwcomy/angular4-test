@@ -19,6 +19,7 @@ import { HeroService } from './hero.service';
       <button (click)="goBack()">Back</button>
     </div>
     `,
+  styleUrls: [ './hero-detail.component.css' ]
 })
 export class HeroDetailComponent implements OnInit {
   constructor(
@@ -31,7 +32,7 @@ export class HeroDetailComponent implements OnInit {
       .switchMap((params: ParamMap) => this.heroService.getHero(+params.get('id')))
       .subscribe(hero => this.hero = hero);
   }
-  @Input() hero: Hero;
+  hero:Hero;
   goBack(): void {
     this.location.back();
   }
